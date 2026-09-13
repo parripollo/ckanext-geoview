@@ -1,5 +1,9 @@
 # ckanext-geoview - Geospatial viewer for CKAN resources
 
+> Fork of [ckan/ckanext-geoview](https://github.com/ckan/ckanext-geoview) tested against
+> [CKAN with PostgreSQL only](https://ckanito.cluster311.com) (no Solr, no Redis).
+
+
 This extension contains view plugins to display geospatial files and services in CKAN.
 It contains an OpenLayers based viewer originally developed by [Philippe Duchesne](https://github.com/pduchesne) and other view plugins that
 used to be part of [ckanext-spatial](https://github.com/ckan/ckanext-spatial).
