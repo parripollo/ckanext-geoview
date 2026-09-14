@@ -1,7 +1,7 @@
 # ckanext-geoview - Geospatial viewer for CKAN resources
 
 > Fork of [ckan/ckanext-geoview](https://github.com/ckan/ckanext-geoview) tested against
-> [CKAN with PostgreSQL only](https://ckanito.cluster311.com) (no Solr, no Redis).
+> [CKAN with PostgreSQL only](https://ckan.cbadatos.com.ar) (no Solr, no Redis).
 
 
 This extension contains view plugins to display geospatial files and services in CKAN.
