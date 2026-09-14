@@ -276,12 +276,16 @@
                 $("#map-container").empty()
                 $("#map-container").append(mapDiv)
 
-                info.tooltip({
-                    animation: false,
-                    trigger: 'manual',
-                    placement: "right",
-                    html: true
-                });
+                // Bootstrap's jQuery plugin is not loaded on the view page
+                // of CKAN 2.10+ (Bootstrap 5 without the jQuery bridge)
+                if (typeof info.tooltip === 'function') {
+                    info.tooltip({
+                        animation: false,
+                        trigger: 'manual',
+                        placement: "right",
+                        html: true
+                    });
+                }
 
                 var overlays = []
                 if ((ckan.geoview && 'feature_hoveron' in ckan.geoview) ? ckan.geoview['feature_hoveron'] : this.options.ol_config.default_feature_hoveron)
